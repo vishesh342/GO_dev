@@ -19,7 +19,7 @@ func NewServerLogger(logger *log.Logger) *ServerHandler {
 
 // ServeHTTP implements the http.Handler interface.
 func (sh *ServerHandler) ServeHTTP(rw http.ResponseWriter, r *http.Request) {
-	sh.logger.Println("Handle Hello requests")
+	sh.logger.Println("Listening requests at 9090...")
 
 	// read the body
 	b, err := ioutil.ReadAll(r.Body)
