@@ -7,7 +7,7 @@ import (
 	"net/http"
 )
 
-// ServerHandler is an HTTP handler that responds with a "Hello" message.
+// ServerHandler is an HTTP handler
 type ServerHandler struct {
 	logger *log.Logger
 }
