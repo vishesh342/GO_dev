@@ -11,7 +11,7 @@ import (
 )
 func main(){
 	logger := log.New(log.Writer(), "logger: ", log.LstdFlags)
-	sh := handler.NewServerLogger(logger)
+	sh := handler.NewProducts(logger)
 	ServMux := http.NewServeMux()
 	ServMux.Handle("/", sh)
 
